@@ -1,8 +1,6 @@
 from zeep import Client, Settings
 import yaml
 
-# settings = Settings(strict=False)
-
 with open('config.yaml') as f:
     data = yaml.safe_load(f)
 
