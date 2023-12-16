@@ -4,3 +4,7 @@ login: 'kitty89'
 password: '61d96a3985'
 url_post: 'https://test-stand.gb.ru/api/posts'
 login_page: 'https://test-stand.gb.ru/login'
+
+title: 'title test'
+description: 'description test'
+content: 'content test'
