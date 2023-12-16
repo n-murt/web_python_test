@@ -1,6 +1,7 @@
 import pytest
 import requests
 import yaml
+import json
 
 with open('config.yaml') as f:
     data = yaml.safe_load(f)
@@ -15,4 +16,11 @@ def get_id():
     result = requests.post(url=url, data={"username": login, "password": password})
     token = result.json()["token"]
     res_get = requests.get(url=url_post, headers={"X-Auth-Token": token}, params={"owner": "notMe"})
-    return res_get.json()['data'][0]['id']
+    result_get = res_get.json()['data']
+
+    res_id_list = [item['id'] for item in result_get]
+
+    return res_id_list
+
+
+#get_id()
