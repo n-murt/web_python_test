@@ -1,3 +1,5 @@
 address: https://test-stand.gb.ru/login
 browser: chrome
-sleep_time: 1
+sleep_time: 3
+login: petrov999
+password: d6b4c8961c
